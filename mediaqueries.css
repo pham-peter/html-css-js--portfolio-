@@ -91,6 +91,11 @@
    {
     margin-top: 2rem;
    }
+   #profile
+   {
+       max-height: 75vh;
+       margin-bottom: 0;
+   }
    #profile, .section-container
    {
     display:block;
@@ -179,7 +184,7 @@
     }
     #profile
     {
-        height: 83vh;
+        max-height: 75vh;
         margin-bottom: 0;
     }
     article
@@ -252,7 +257,6 @@
     .section_pic-container
     {
         width: auto;
-        height: 46vw;
         justify-content: center;
     }
     .section_text_p2

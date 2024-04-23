@@ -218,13 +218,15 @@ section
     display: flex;
     justify-content: center;
     gap: 5rem;
-    height: 60vh;
-
+    /* gap between profile picture and the "hello i'm..." text*/
+    max-height: 45vh;
+    /* after hours of tinkering I realized this is why there's such a huge white space between the profile section to the about me section -- this will need to be adjusted via mediaqueries for different screen widths*/
 }
+
 
 .section_pic-container
 {
-    display:flex;
+    display: flex;
     height: 400px;
     width: 400px;
     margin: auto 0;
@@ -257,6 +259,7 @@ section
 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
+    /* the vertical space between analyst and the download/contact info buttons */
 }
 
 .title
