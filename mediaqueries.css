@@ -1,3 +1,42 @@
+@media screen and (max-width: 3440px) 
+{
+    #profile
+    {
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+    .about-containers
+    {
+        flex-wrap: wrap;
+    }
+    a:hover
+    {
+        color: grey;
+        text-decoration: underline;
+        text-underline-offset: 0.75rem;
+        /* this sets the underline affect to have a bit more space between the text and the line as opposed to the usual actual underline*/
+        text-decoration-color: rgb(163, 163, 163);
+    }
+    .text-container a:hover
+    /* this selector targets only the <a> elements that are within <p> tags inside elements with the .text-container class when they are hovered over */
+    {
+        color: grey;
+        text-decoration: underline;
+        text-underline-offset: 0.35rem;
+        /* this sets the underline affect to have a bit more space between the text and the line as opposed to the usual actual underline*/
+        text-decoration-color: rgb(163, 163, 163);
+    }
+    .contact-info-container a:hover
+    /* this selector targets only the <a> elements that are within <p> tags inside elements with the .contact-info-container class when they are hovered over */
+    {
+        color: grey;
+        text-decoration: underline;
+        text-underline-offset: 0.5rem;
+        /* this sets the underline affect to have a bit more space between the text and the line as opposed to the usual actual underline*/
+        text-decoration-color: rgb(163, 163, 163);
+    }
+}
+
 @media screen and (max-width: 1440px) 
 {
     #profile
@@ -7,7 +46,33 @@
     }
     .about-containers
     {
-        flex-wrap: wrap
+        flex-wrap: wrap;
+    }
+    a:hover
+    {
+        color: grey;
+        text-decoration: underline;
+        text-underline-offset: 0.75rem;
+        /* this sets the underline affect to have a bit more space between the text and the line as opposed to the usual actual underline*/
+        text-decoration-color: rgb(163, 163, 163);
+    }
+    .text-container a:hover
+    /* this selector targets only the <a> elements that are within <p> tags inside elements with the .text-container class when they are hovered over */
+    {
+        color: grey;
+        text-decoration: underline;
+        text-underline-offset: 0.35rem;
+        /* this sets the underline affect to have a bit more space between the text and the line as opposed to the usual actual underline*/
+        text-decoration-color: rgb(163, 163, 163);
+    }
+    .contact-info-container a:hover
+    /* this selector targets only the <a> elements that are within <p> tags inside elements with the .contact-info-container class when they are hovered over */
+    {
+        color: grey;
+        text-decoration: underline;
+        text-underline-offset: 0.5rem;
+        /* this sets the underline affect to have a bit more space between the text and the line as opposed to the usual actual underline*/
+        text-decoration-color: rgb(163, 163, 163);
     }
 }
 
@@ -52,6 +117,58 @@
    {
     margin-top: 0;
    }
+   .about-containers, .contact-info-upper-container, .btn-container
+    /* the entirety of the contact me box cotnainer, contents, etc.*/
+    {
+        flex-wrap: wrap;
+    }
+   a:hover
+   /* added because hyperlink hover underlines were overflowing on smaller screens */
+   {
+   color: grey;
+   text-decoration: underline;
+   text-underline-offset: 0.75rem;
+   /* this sets the underline affect to have a bit more space between the text and the line as opposed to the usual actual underline*/
+   text-decoration-color: rgb(163, 163, 163);
+   }
+   .text-container a:hover
+   /* this selector targets only the <a> elements that are within <p> tags inside elements with the .text-container class when they are hovered over */
+   {
+       color: grey;
+       text-decoration: underline;
+       text-underline-offset: 0.35rem;
+       /* this sets the underline affect to have a bit more space between the text and the line as opposed to the usual actual underline*/
+       text-decoration-color: rgb(163, 163, 163);
+   }
+   .contact-info-container a:hover
+   /* this selector targets only the <a> elements that are within <p> tags inside elements with the .contact-info-container class when they are hovered over */
+   {
+       color: grey;
+       text-decoration: underline;
+       text-underline-offset: 0.5rem;
+       /* this sets the underline affect to have a bit more space between the text and the line as opposed to the usual actual underline*/
+       text-decoration-color: rgb(163, 163, 163);
+   }
+   .nav-links li a
+   {
+       font-size: 1.25rem;
+       /* the link list items like home, about, experience, projects, etc.*/
+   }
+   .nav-links
+   {
+       flex-wrap: wrap;
+       /* the vertical space between the nav links like home, about, etc. */
+       text-align: center;
+       justify-content: center;
+       margin: 0 auto;
+       width: 100%;
+       margin-bottom: 1rem; 
+       /* this is needed so that the footer is nearly the same amount of space vertically down when you change the size of the screen and the nav-links items can either be 1 or 2 rows*/
+   }
+   footer
+   {
+       position: relative; /* Adds 2rem of padding at the bottom */
+   }
 }
 
 @media screen and (max-width: 600px) 
@@ -69,12 +186,26 @@
     {
         font-size: 1rem;
     }
+    footer
+    {
+        padding-bottom: 20% /* Adds 2rem of padding at the bottom */
+    }
     footer nav
     {
         height: fit-content;
         margin-bottom: 2rem;
     }
+    a:hover
+    /* added because hyperlink hover underlines were overflowing on smaller screens */
+    {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    /* this sets the underline affect to have a bit more space between the text and the line as opposed to the usual actual underline*/
+    text-decoration-color: rgb(163, 163, 163);
+    }
     .about-containers, .contact-info-upper-container, .btn-container
+    /* the entirety of the contact me box cotnainer, contents, etc.*/
     {
         flex-wrap: wrap;
     }
@@ -86,10 +217,22 @@
     {
         font-size: 1rem;
         line-height: 2.5rem;
+        /* the linkedin url, phmptr@gmail.com characters, etc. */
     }
+    .contact-info-container a:hover
+    /* this selector targets only the <a> elements that are within <p> tags inside elements with the .contact-info-container class when they are hovered over */
+    {
+        color: grey;
+        text-decoration: underline;
+        text-underline-offset: 0.4rem;
+        /* this sets the underline affect to have a bit more space between the text and the line as opposed to the usual actual underline*/
+        text-decoration-color: rgb(163, 163, 163);
+    }
+
     .nav-links li a
     {
         font-size: 1rem;
+        /* the link list items like home, about, experience, projects, etc.*/
     }
     .experience-sub-title
     {
@@ -103,6 +246,7 @@
     {
         flex-direction: column;
         gap: 0.5rem;
+        /* the vertical space between the nav links like home, about, etc. */
         text-align: center;
     }
     .section_pic-container
@@ -123,4 +267,14 @@
     {
         text-align: justify;
     }
+    .text-container a:hover
+    /* this selector targets only the <a> elements that are within <p> tags inside elements with the .text-container class when they are hovered over */
+    {
+        color: grey;
+        text-decoration: underline;
+        text-underline-offset: 0.35rem;
+        /* this sets the underline affect to have a bit more space between the text and the line as opposed to the usual actual underline*/
+        text-decoration-color: rgb(163, 163, 163);
+    }
+
 }

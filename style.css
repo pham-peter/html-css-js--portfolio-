@@ -30,6 +30,7 @@ a, .btn
 
 {
     transition: all 300ms ease;
+    /* applies a transition effect to all properties (such as color, size, opacity, etc.) of elements with classes "a" and "btn" -- the transition effect will occur over a duration of 300 milliseconds, with an easing function applied to smoothen the change */
 }
 
 
@@ -71,7 +72,7 @@ a:hover
 {
     color: grey;
     text-decoration: underline;
-    text-underline-offset: 1rem;
+    text-underline-offset: 0.75rem;
     /* this sets the underline affect to have a bit more space between the text and the line as opposed to the usual actual underline*/
     text-decoration-color: rgb(163, 163, 163);
 }
