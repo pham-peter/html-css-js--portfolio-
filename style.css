@@ -208,21 +208,20 @@ section
 
 .section-container
 {
-    display:flex;
+    display: flex;
+    
 }
 
 /* PROFILE SECTION */
 
-#profile
+#profile2
 {
     display: flex;
     justify-content: center;
     gap: 5rem;
     /* gap between profile picture and the "hello i'm..." text*/
-    max-height: 45vh;
-    /* after hours of tinkering I realized this is why there's such a huge white space between the profile section to the about me section -- this will need to be adjusted via mediaqueries for different screen widths*/
+    /* after hours of tinkering I realized this is why there's such a huge white space between the profile section to the about me section -- this will need to be adjusted via mediaqueries for different screen*/
 }
-
 
 .section_pic-container
 {
@@ -235,6 +234,7 @@ section
 .profile-pic
 {
     border-radius: 2rem;
+    /* makes the padded square radius for the profile pics*/
 }
 
 .section_text
@@ -253,6 +253,7 @@ section
     text-align: center;
     padding-top: 1rem;
     /* i set the padding to 1rem because when you clink on the nav links (about, experience, etc.), the texts such as "get to know more..." or "explore my..." were lined exactly at the top of the browser -- this gives breathing room for a more aesthetic link */
+    /* this is the "get to know more, get in touch, etc. small text" */
 }
 
 .section_text_p2

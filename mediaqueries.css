@@ -1,9 +1,9 @@
-@media screen and (max-width: 3440px) 
+@media screen and (min-width: 1920px) 
 {
-    #profile
+    body 
     {
-        height: 83vh;
-        margin-bottom: 6rem;
+        max-width: 1920px; /* Adjust this width as needed */
+        margin: auto; /* Centers the content */
     }
     .about-containers
     {
@@ -39,11 +39,6 @@
 
 @media screen and (max-width: 1440px) 
 {
-    #profile
-    {
-        height: 83vh;
-        margin-bottom: 6rem;
-    }
     .about-containers
     {
         flex-wrap: wrap;
@@ -74,10 +69,20 @@
         /* this sets the underline affect to have a bit more space between the text and the line as opposed to the usual actual underline*/
         text-decoration-color: rgb(163, 163, 163);
     }
+    .logo
+    {
+        font-size: 2.2rem;
+        /*changes the size of the logo (my name Peter Pham)*/
+    }
 }
 
 @media screen and (max-width: 1200px) 
 {
+    .logo
+    {
+        font-size: 2.2rem;
+        /*changes the size of the logo (my name Peter Pham)*/
+    }
     #desktop-nav 
     {
         display: none;
@@ -91,12 +96,12 @@
    {
     margin-top: 2rem;
    }
-   #profile
+   #profile2
    {
-       max-height: 75vh;
-       margin-bottom: 0;
+       padding-bottom: 3rem;
+       /* just like for the line within 600px, for widths <1200px, this will make the spacing from the bottom of the linkedin button icon larger or smaller from the next about section*/
    }
-   #profile, .section-container
+   #profile2, .section-container
    {
     display:block;
    }
@@ -170,22 +175,14 @@
        margin-bottom: 1rem; 
        /* this is needed so that the footer is nearly the same amount of space vertically down when you change the size of the screen and the nav-links items can either be 1 or 2 rows*/
    }
-   footer
-   {
-       position: relative; /* Adds 2rem of padding at the bottom */
-   }
 }
 
 @media screen and (max-width: 600px) 
 {
-    #contact, footer
+    #profile2
     {
-        height: 40vh;
-    }
-    #profile
-    {
-        max-height: 75vh;
-        margin-bottom: 0;
+        padding-bottom: 3rem;
+        /* for widths <600px, this will make the spacing from the bottom of the linkedin button icon larger or smaller from the next about section*/
     }
     article
     {
@@ -193,7 +190,7 @@
     }
     footer
     {
-        padding-bottom: 20% /* Adds 2rem of padding at the bottom */
+        padding-bottom: 10rem; /* Adds 10rem of padding at the bottom */
     }
     footer nav
     {
