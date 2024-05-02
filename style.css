@@ -493,7 +493,8 @@ article.icon
 
 .project-img
 {
-    border-radius: 2rem;
+    border-radius: 1rem;
+    /* changed from 2rem to 1rem because it looked too round on mobile*/
     width: 30%;
     height: 30%;
 }
