@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peter Pham Website</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
@@ -17,7 +18,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#resume" onclick="window.open('Peter Pham Resume v1 2024.pdf')">Resume</a></li>
+                <li><a href="#resume" onclick="window.open('Peter Pham Resume 2024 Updated.pdf', '_blank')">Resume</a></li>
                 <li><a href="artwork.html">Artwork</a></li>
                 <li><a href="#photography">Photography</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -38,7 +39,7 @@
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#resume" onclick="toggleMenu()">Resume</a></li>
+                <li><a href="#resume" onclick="window.open('Peter Pham Resume 2024 Updated.pdf', '_blank')">Resume</a></li>
                 <li><a href="artwork.html" onclick="toggleMenu()">Artwork</a></li>
                 <li><a href="#photography" onclick="toggleMenu()">Photography</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
@@ -56,21 +57,40 @@
             />
         </div>
         <div class="section_text">
-            <p class="section_text_p1">Hello, I'm</p>
+            <p class="section_text_p1"><img src="hand-waving.svg" alt="Wave" class="waving-hand" style="vertical-align: middle;"> Hello, I'm</p>
             <h1 class="title">Peter Pham</h1>
             <p class="section_text_p2">Analyst</p>
             <div class="btn-container">
                 <button class="btn btn-color-2"
-                onclick="window.open('Peter Pham Resume v1 2024.pdf')">Download CV</button>
+                onclick="window.open('Peter Pham Resume 2024 Updated.pdf', '_blank')">Download CV</button>
                 <button class="btn btn-color-1"
                 onclick="location.href='#contact'">Contact Info</button>
             </div>
             <div id="socials-container">
                 <img
-                src="linkedin.png"
+                src="linkedin-square-icon.svg"
+                onmouseover="this.src='linkedin-app-icon.svg';"
+                onmouseout="this.src='linkedin-square-icon.svg';"
                 alt="My LinkedIn profile"
                 class="icon"
-                onclick="location.href='https://www.linkedin.com/in/peter--pham/'"/>
+                onclick="window.open('https://www.linkedin.com/in/peter--pham/', '_blank')"
+                />
+                <img
+                src="instagram-bw.svg"
+                onmouseover="this.src='instagram-color.svg';"
+                onmouseout="this.src='instagram-bw.svg';"
+                alt="My Instagram profile"
+                class="icon"
+                onclick="window.open('https://www.instagram.com/thptrphm/', '_blank')"
+                />
+                <img
+                src="github-bw.svg"
+                onmouseover="this.src='github-color.svg';"
+                onmouseout="this.src='github-bw.svg';"
+                alt="My GitHub"
+                class="icon"
+                onclick="window.open('https://github.com/pham-peter/', '_blank')"
+                />
             </div>
         </div>
         </section>
@@ -90,16 +110,16 @@
                 <div class="about-containers">
                     <div class="details-container">
                         <img
-                        src="experience.png"
+                        src="certificate-fill.svg"
                         alt="Experience Icon"
                         class="icon"
                         />
                         <h3>Experience</h3>
-                        <p>5+ Years <br>Data Analysis</p>
+                        <p>5+ Years <br>Data Analysis, Program Management</p>
                     </div>
                     <div class="details-container">
                         <img
-                        src="education.png"
+                        src="graduation-cap-fill.svg"
                         alt="Education Icon"
                         class="icon"
                         />
@@ -112,11 +132,11 @@
                     </p>
                     <br>
                     <p>
-                    Professionally, I'm a data analyst at heart – experienced with both research and visualizations for business, program, and marketing needs. Across my journey, I've had the opportunity to work within both non-profit and for-profit sectors. This diverse experience provided me with the advantages of both worlds, and I'm able to apply the knowledge I've learned from both to all of my tasks and responsibilities. I'm fortunate enough to have been exposed to academic data, biographical data, financial data, marketing data, etc. and have no issues communicating and/or presenting actional insights to a variety of individuals – be it C-level executives and stakeholders or any other constituents.   
+                    Professionally, I'm a data analyst at heart – experienced with both research and visualizations for business, program, and marketing needs. Across my journey, I've had the opportunity to work within both non-profit and for-profit sectors. This diverse experience provided me with the advantages of both worlds, and I'm able to apply the knowledge I've learned to all of my tasks and responsibilities. I'm fortunate enough to have been exposed to academic data, biographical data, financial data, marketing data, etc. and have no issues with communicating and/or presenting actional insights to a variety of individuals – be it C-level executives and stakeholders or any other constituents.   
                     </p>
                     <br>
                     <p>
-                    Personally, I'm a huge fantasy + sci-fi nerd and extremely passionate about my hobbies. I'm a huge PC gamer and an aspiring artist, heavily focusing on charcoal artwork and other mediums where I can get my hands dirty. I also used to dabble with (jazz) guitar, and love old  instruments such as the Harmony semi-hollow guitars and the pre-2000s MIJ Fenders. I'll be periodically posting  <a href="artwork.html"><b>my art</b></a> and photos from my friends, so please feel free to check out their websites too. Whether it's strategy games, shooters, MMOs, or anything tabletop related, bring me a drink and I'll fill you in with useless info for hours.
+                    Personally, I'm a huge fantasy + sci-fi nerd and am extremely passionate about my hobbies. I'm a huge PC gamer and an aspiring artist, heavily focusing on charcoal artwork and other mediums where I can get my hands dirty. I also used to dabble with (jazz) guitar, and love old  instruments such as the Harmony semi-hollow guitars and the pre-2000s MIJ Fenders. I'll be periodically posting <a href="artwork.html", target="_blank"><b>my art</b></a> and photos from my friends, so please feel free to check out their websites too. Whether it's strategy games, shooters, MMOs, or anything tabletop related, bring me a drink and I'll fill you in with useless info for hours.
                     </p>
                 </div>
             </div>
@@ -135,118 +155,138 @@
             <div class="about-containers">
                 <div class="details-container">
                     <h2 class="experience-sub-title">Data Analysis</h2>
-                    <div class="article-container">
-                        <article>
-                            <img
-                            src="checkmark.png"
-                            alt="experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>SQL</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                            src="checkmark.png"
-                            alt="experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>R</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                            src="checkmark.png"
-                            alt="experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Python</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                            src="checkmark.png"
-                            alt="experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>SAS</h3>
-                            </div>
-                        </article>
-                    </div>
+                        <div class="article-container">
+                            <article>
+                                <img
+                                src="sql-browser.svg"
+                                alt="experience icon"
+                                class="icon"
+                                />
+                                <div>
+                                    <h3>SQL</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img
+                                src="coding-icon.svg"
+                                alt="experience icon"
+                                class="icon1"
+                                />
+                                <div>
+                                    <h3>R</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img
+                                src="python.svg"
+                                alt="experience icon"
+                                class="icon"
+                                />
+                                <div>
+                                    <h3>Python</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img
+                                src="coding-icon.svg"
+                                alt="experience icon"
+                                class="icon1"
+                                />
+                                <div>
+                                    <h3>SAS</h3>
+                                </div>
+                            </article>
+                        </div>
                 </div>
                 <div class="details-container">
                     <h2 class="experience-sub-title">Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img
-                            src="checkmark.png"
-                            alt="experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>HTML</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                            src="checkmark.png"
-                            alt="experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>CSS</h3>
-                            </div>
-                        </article>
-                    </div>
+                        <div class="article-container">
+                            <article>
+                                <img
+                                src="code-block-fill.svg"
+                                alt="experience icon"
+                                class="icon"
+                                />
+                                <div>
+                                    <h3>HTML</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img
+                                src="brackets-curly.svg"
+                                alt="experience icon"
+                                class="icon"
+                                />
+                                <div>
+                                    <h3>CSS</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img
+                                src="js-file-icon.svg"
+                                alt="experience icon"
+                                class="icon"
+                                />
+                                <div>
+                                    <h3>JavaScript</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img
+                                src="typescript.svg"
+                                alt="experience icon"
+                                class="icon"
+                                />
+                                <div>
+                                    <h3>TypeScript</h3>
+                                </div>
+                            </article>
+                        </div>
                 </div>
                 <div class="details-container">
-                    <h2 class="experience-sub-title">Databases / CRMs</h2>
-                    <div class="article-container">
-                        <article>
-                            <img
-                            src="checkmark.png"
-                            alt="experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>MySQL</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                            src="checkmark.png"
-                            alt="experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>PostgreSQL</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                            src="checkmark.png"
-                            alt="experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Snowflake</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                            src="checkmark.png"
-                            alt="experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>BigQuery</h3>
-                            </div>
-                        </article>
-                    </div>
+                    <h2 class="experience-sub-title">Databases / Warehouses</h2>
+                        <div class="article-container">
+                            <article>
+                                <img
+                                src="database-fill.svg"
+                                alt="experience icon"
+                                class="icon"
+                                />
+                                <div>
+                                    <h3>MySQL</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img
+                                src="database-fill.svg"
+                                alt="experience icon"
+                                class="icon"
+                                />
+                                <div>
+                                    <h3>PostgreSQL</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img
+                                src="data-mart-icon.svg"
+                                alt="experience icon"
+                                class="icon"
+                                />
+                                <div>
+                                    <h3>Snowflake</h3>
+                                </div>
+                            </article>
+                            <article>
+                                <img
+                                src="data-mart-icon.svg"
+                                alt="experience icon"
+                                class="icon"
+                                />
+                                <div>
+                                    <h3>BigQuery</h3>
+                                </div>
+                            </article>
+                        </div>
                 </div>
                 </div>
             </div>
@@ -265,38 +305,42 @@
             <div class="details-container color-container">
                 <div class="article-container">
                     <img
-                    src="project-1.png"
+                    src="black tengu exotics logo.jpeg"
                     alt="Project 1"
                     class="project-img"
                     />
                 </div>
-                <h2 class="experience-sub-title project-title">Project One</h2>
+                <h2 class="experience-sub-title project-title">Black Tengu Exotics Storefront</h2>
                 <div class="btn-container">
                     <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.linkedin.com/in/peter--pham/'">
-                        Project Link
+                        Website Link
                     </button>
                 </div>
+                <p><br>This will be a website I'm creating for my friend Bryce Fisher. He's an exotic pet breeder and currently has an online storefront named <a href="https://www.morphmarket.com/stores/blacktenguexotics/", target="_blank"><b>Blank Tengu Exotics here</b></a> while I eventually get a website online for him.</p>
+                <p><br>I'll also shamelessly plug him and refer you to both his <a href="https://www.instagram.com/black_tengu_exotics/", target="_blank"><b>Instagram</b></a> and <a href="https://www.youtube.com/@btengu", target="_blank"><b>YouTube</b></a> accounts. </p>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img
+                    src="autumn placeholder.png"
+                    alt="Project 2"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Autumn Nguyen Website</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.linkedin.com/in/peter--pham/'">
+                        Website Link
+                    </button>
+                </div>
+                <p><br>This will also be a website I'm creating for my friend Autumn "Oanh" Nguyen. She's an expert in communications, and I'll also be periodically posting her photos and other media here.</p>
+                <p><br>I'll also shamelessly plug her and refer you to her <a href="https://www.instagram.com/littlemisswonton/", target="_blank"><b>Instagram Account here</b></a>. </p>
             </div>
             <div class="details-container color-container">
                 <div class="article-container">
                     <img
                     src="project-1.png"
-                    alt="Project 1"
-                    class="project-img"
-                    />
-                </div>
-                <h2 class="experience-sub-title project-title">Project Two</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.linkedin.com/in/peter--pham/'">
-                        Project Link
-                    </button>
-                </div>
-            </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img
-                    src="project-1.png"
-                    alt="Project 1"
+                    alt="Project 3"
                     class="project-img"
                     />
                 </div>
@@ -322,29 +366,32 @@
             <div class="contact-info-upper-container">
                 <div class="contact-info-container">
                     <img
-                    src="linkedin.png"
+                    id="contactLIIcon"
+                    src="linkedin-square-icon.svg"
                     alt="LinkedIn Icon"
                     class="icon contact-icon"
                     />
-                    <p><a href="https://www.linkedin.com/in/peter--pham/">linkedin.com/in/peter--pham/</a>
+                    <p><a href="https://www.linkedin.com/in/peter--pham/" target="_blank" id="ContactLILink" onmouseover="changeIconLI(true);" onmouseout="changeIconLI(false)">linkedin.com/in/peter--pham/</a>
                     </p>
                 </div>
                 <div class="contact-info-container">
                     <img
-                    src="email.png"
+                    id="emailIcon1"
+                    src="envelope-simple.svg"
                     alt="Email Icon"
                     class="icon contact-icon email-icon"
                     />
-                    <p><a href="mailto:phmptr@gmail.com">phmptr@gmail.com</a>
+                    <p><a href="mailto:phmptr@gmail.com" target="_blank" id="emailLink1" onmouseover="changeIconE1(true);" onmouseout="changeIconE1(false);">phmptr@gmail.com</a>
                     </p>
                 </div>
                 <div class="contact-info-container">
                     <img
-                    src="email.png"
+                    id="emailIcon2"
+                    src="envelope-simple-fill.svg"
                     alt="Email Icon"
                     class="icon contact-icon email-icon"
                     />
-                    <p><a href="mailto:phmptr@gmail.com">peter_p@mit.edu</a>
+                    <p><a href="mailto:phmptr@gmail.com" target="_blank" id="emailLink2" onmouseover="changeIconE2(true);" onmouseout="changeIconE2(false);">peter_p@mit.edu</a>
                     </p>
                 </div>
             </div>
@@ -358,7 +405,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#resume" onclick="window.open('Peter Pham Resume v1 2024.pdf')">Resume</a></li>
+                    <li><a href="#resume" onclick="window.open('Peter Pham Resume 2024 Updated.pdf' , '_blank')">Resume</a></li>
                     <li><a href="artwork.html">Artwork</a></li>
                     <li><a href="#photography">Photography</a></li>
                     <li><a href="#contact">Contact</a></li>

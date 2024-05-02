@@ -1,3 +1,18 @@
+@keyframes waveAnimation {
+    0%, 100% {
+      transform: rotate(-10deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+  }
+  
+  .waving-hand {
+      display: inline-block;  /* Allows transform to work properly */
+      vertical-align: middle;
+      animation: waveAnimation 1s ease-in-out infinite;
+  }
+
 @media screen and (min-width: 1920px) 
 {
     body 
@@ -72,12 +87,29 @@
     .logo
     {
         font-size: 2.2rem;
-        /*changes the size of the logo (my name Peter Pham)*/
+        /* changes the size of the logo (my name Peter Pham)*/
+        padding-left: 30px;
+        padding-right: 20px;
+    }
+    .nav-links li a
+    {
+        /* blank for now*/
     }
 }
 
 @media screen and (max-width: 1200px) 
 {
+        .menu-links a
+    {
+        display: block;
+        padding: 10px;
+        text-align: center;
+        font-size: 1.25rem;
+        color: black;
+        text-decoration: none;
+        transition: all 0.3 ease-in-out;
+    }
+
     .logo
     {
         font-size: 2.2rem;
@@ -179,6 +211,16 @@
 
 @media screen and (max-width: 600px) 
 {
+        .menu-links a
+    {
+        display: block;
+        padding: 10px;
+        text-align: center;
+        font-size: 1rem;
+        color: black;
+        text-decoration: none;
+        transition: all 0.3 ease-in-out;
+    }
     #profile2
     {
         padding-bottom: 3rem;
@@ -277,5 +319,13 @@
         /* this sets the underline affect to have a bit more space between the text and the line as opposed to the usual actual underline*/
         text-decoration-color: rgb(163, 163, 163);
     }
+    .details-container p a:hover {
+        /* this was created to handle the underlining for the hyperlinks located within the projects*/
+        color: grey;
+        text-decoration: underline;
+        text-underline-offset: 0.35rem;
+        text-decoration-color: rgb(163, 163, 163);
+    }
+    
 
 }

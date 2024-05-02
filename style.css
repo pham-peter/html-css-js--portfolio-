@@ -36,7 +36,6 @@ a, .btn
 
 
 /* DESKTOP NAV*/
-
 nav, .nav-links
 {
     display: flex;
@@ -47,8 +46,9 @@ nav
 {
     justify-content: space-around;
     align-items: center;
+
     height: 17vh;
-    /* whatever the view height is -- this is set to take up 17% of the whole screen*/
+    /* previously 17vh -- changed to margin-top + bot of 2rem so that the screen doesn't adjust incorrectly*/
 }
 
 .nav-links
@@ -102,6 +102,7 @@ a:hover
 {
     position: relative;
     display: inline-block;
+    z-index: 1000;   
 }
 
 .hamburger-icon
@@ -223,6 +224,10 @@ section
     /* after hours of tinkering I realized this is why there's such a huge white space between the profile section to the about me section -- this will need to be adjusted via mediaqueries for different screen*/
 }
 
+#profile2 .icon
+{
+    cursor: pointer;
+}
 .section_pic-container
 {
     display: flex;
@@ -279,10 +284,19 @@ section
 
 /* ICONS */
 
+
 .icon
+{
+    cursor: default;
+    height: 2rem;
+    /* this controls the actual size of the icons*/
+}
+
+.icon.arrow
 {
     cursor: pointer;
     height: 2rem;
+    /* this controls the actual size of the icons*/
 }
 
 /* BUTTONS */
@@ -300,7 +314,8 @@ section
     transition: all 300ms ease;
     padding: 1rem;
     width: 8rem;
-    border-radius: 2rem;
+    border-radius: 1rem;
+    /* changes the shape of the buttons -- 2rem makes it more oval, 1 rem makes it a smoother rectangle*/
 }
 
 .btn-color-1, .btn-color-2
@@ -334,10 +349,6 @@ section
     border: rgb(255,255,255) 0.1rem solid;
 }
 
-.btn-container
-{
-    gap: 1rem;
-}
 
 /* ABOUT SECTION */
 
@@ -405,19 +416,12 @@ section
     position: relative;
 }
 
-.experience-sub-title
+#experience .icon1
+/* this was created because the svg icons for the data analysis items in html were*/
 {
-    color: rgb(85,85,85);
-    font-weight: 600;
-    font-size: 1.75rem;
-    margin-bottom: 2rem;
-}
-
-.experience-details-container
-{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    cursor: cursor;
+    height: 1.5rem;
+    /* this controls the actual size of the icons*/
 }
 
 .article-container
@@ -435,12 +439,30 @@ section
     
 }
 
+.experience-sub-title
+{
+    color: black;
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.experience-details-container
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
 article
 {
     display: flex;
     width: 10rem;
     gap: 0.5rem;
     align-items: center; /* Center the icon with the text */
+    /* justify-content: center; */
+    /* temporarily removed because it throws off the centering of the items*/
 }
 
 article.icon
@@ -449,6 +471,14 @@ article.icon
 }
 
 /* PROJECTS SECTION */
+.details-container p a:hover {
+    /* this was created to handle the underlining for the hyperlinks located within the projects*/
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 0.35rem;
+    text-decoration-color: rgb(163, 163, 163);
+}
+
 
 #projects
 {
@@ -549,43 +579,51 @@ footer p
 .artwork-about-container
 {
     display: flex;
-    gap: 5rem;
+    gap: 3rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
     justify-content: center;
     flex-wrap: wrap;
-    order: -1;
-    flex-direction: column-reverse;
+}
+
+.artwork-container-color-container
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    /* keeps children aligning right to left */
+    gap: 2.5rem;
+    align-items: center;
+    /* this is critical for vertical centering */
 }
 
 .artwork-container
 {
-    order: -1;
-    display: flex;
-    justify-content: center;
-    text-align: initial;
-    flex-wrap: wrap;
-    /* if or when the contents of the container overflow (i.e., data analysis languages), they'll now wrap around or under eachother */
-    flex-direction: row-reverse;
-    gap: 2.5rem;
-    /* need this to align the icon/texts (SQL, Python) so that it's in the center of the container*/
-    align-items: flex-start;
-    /* changed to align items from left to right */
-    
+    /* if specific styles are needed here, they can be added, but this is the inner container */
 }
-
-
 
 .artwork-img
 {
-    max-width: 70vh;
-    max-height: 70vh;
+    max-width: 360px;
+    max-height: 360px;
     width: auto;
     height: auto;
+    transition: filter 0.3s ease;
+    /* smooth transition for the filter effect */
 }
 
 .artwork-title
 {
     margin: 1rem;
     color: black;
+    text-align: center;
+    /* center align the titles under each image */
+    width: 100%;
+    /* full width to ensure it's under the image */
+}
+
+.artwork-img:hover
+{
+    filter: grayscale(100%); /* Converts the image to grayscale on hover */
 }

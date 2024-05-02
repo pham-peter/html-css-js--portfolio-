@@ -12,15 +12,36 @@
         <div class="logo">Peter Pham</div>
         <div>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Homepage</a></li>
                 <li><a href="index.html#about">About</a></li>
                 <li><a href="index.html#experience">Experience</a></li>
                 <li><a href="index.html#projects">Projects</a></li>
-                <li><a href="#resume" onclick="window.open('Peter Pham Resume v1 2024.pdf')">Resume</a></li>
+                <li><a href="#resume" onclick="window.open('Peter Pham Resume 2024 Updated.pdf', '_blank')">Resume</a></li>
                 <li><a href="artwork.html">Artwork</a></li>
                 <li><a href="photography.html">Photography</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
             </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Peter Pham</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html" onclick="toggleMenu()">Homepage</a></li>
+                <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#resume" onclick="window.open('Peter Pham Resume 2024 Updated.pdf', '_blank')">Resume</a></li>
+                <li><a href="#" onclick="toggleMenu();">Artwork</a></li>
+                <li><a href="photography.html" onclick="toggleMenu()">Photography</a></li>
+                <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
         </div>
     </nav>
 
@@ -32,35 +53,8 @@
             <div class="artwork-container-color-container">
                 <div class="artwork-container">
                     <img
-                    src="website 1.jpg"
-                    alt="Artwork 1"
-                    class="artwork-img"
-                    />
-                </div>
-            </div>
-            <div class="artwork-container-color-container">
-                <div class="artwork-container">
-                    <img
-                    src="website 2.png"
-                    alt="Artwork 2"
-                    class="artwork-img"
-                    />
-                </div>
-            </div>
-            <div class="artwork-container-color-container">
-                <div class="artwork-container">
-                    <img
-                    src="website 3.jpg"
-                    alt="Artwork 3"
-                    class="artwork-img"
-                    />
-                </div>
-            </div>
-            <div class="artwork-container-color-container">
-                <div class="artwork-container">
-                    <img
-                    src="website 4.jpg"
-                    alt="Artwork 4"
+                    src="website 6.png"
+                    alt="Artwork 6"
                     class="artwork-img"
                     />
                 </div>
@@ -77,8 +71,35 @@
             <div class="artwork-container-color-container">
                 <div class="artwork-container">
                     <img
-                    src="website 6.png"
-                    alt="Artwork 6"
+                    src="website 4.jpg"
+                    alt="Artwork 4"
+                    class="artwork-img"
+                    />
+                </div>
+            </div>
+            <div class="artwork-container-color-container">
+                <div class="artwork-container">
+                    <img
+                    src="website 3.jpg"
+                    alt="Artwork 3"
+                    class="artwork-img"
+                    />
+                </div>
+            </div>
+            <div class="artwork-container-color-container">
+                <div class="artwork-container">
+                    <img
+                    src="cartoon about me pic.jpg"
+                    alt="Artwork 2"
+                    class="artwork-img"
+                    />
+                </div>
+            </div>
+            <div class="artwork-container-color-container">
+                <div class="artwork-container">
+                    <img
+                    src="website 1.jpg"
+                    alt="Artwork 1"
                     class="artwork-img"
                     />
                 </div>
@@ -90,10 +111,11 @@
         <nav>
             <div class="nav-links-container">
                 <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
                     <li><a href="index.html#about">About</a></li>
                     <li><a href="index.html#experience">Experience</a></li>
                     <li><a href="index.html#projects">Projects</a></li>
-                    <li><a href="#resume" onclick="window.open('Peter Pham Resume v1 2024.pdf')">Resume</a></li>
+                    <li><a href="#resume" onclick="window.open('Peter Pham Resume 2024 Updated.pdf' , '_blank')">Resume</a></li>
                     <li><a href="#artwork">Artwork</a></li>
                     <li><a href="index.html#photography">Photography</a></li>
                     <li><a href="index.html#contact">Contact</a></li>
@@ -104,5 +126,6 @@
             2024&#169; Peter Pham
         </p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
