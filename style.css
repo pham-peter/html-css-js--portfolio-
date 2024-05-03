@@ -482,6 +482,7 @@ article.icon
 {
     display: inline-block;
     vertical-align: middle;
+    max-width: 90%;
     /* adjusts the alignment(s) of the images, regardless of width or height, to the middle of each other */
     width: 500px;
     margin: 10px;
