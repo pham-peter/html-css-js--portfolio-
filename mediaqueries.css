@@ -350,4 +350,8 @@
         border: 1px solid black;
         /* creates a black border outline on mobile or 600px or less screen width so that it isn't jarringly white */
     }
+    .typewriter_text, .section_text_p2 
+    {
+        font-size: 1.1rem;
+    }
 }

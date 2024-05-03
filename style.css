@@ -224,7 +224,21 @@ section
     gap: 5rem;
     /* gap between profile picture and the "hello i'm..." text*/
     /* after hours of tinkering I realized this is why there's such a huge white space between the profile section to the about me section -- this will need to be adjusted via mediaqueries for different screen*/
+
 }
+
+#profile2 .text-container p 
+{
+    font-size: 9.5px;
+    /* reduces the font size of the text below the social button icons */
+    width: 100%;
+    /* ensures the container takes full width of its parent */
+    max-width: 250px;
+    /* restricts maximum width for better readability -- i.e, 250px makes the text take up 2 lines, 500 would make it take up one, etc. */
+    margin: auto;
+    /* centers the container within its parent element horizontally */
+}
+
 
 #profile2 .icon
 {
@@ -240,14 +254,56 @@ section
 
 .profile-pic
 {
-    border-radius: 2rem;
-    /* makes the padded square radius for the profile pics*/
+    border-radius: 2rem; /* makes the padded square radius for the profile pics*/
 }
 
 .section_text
 {
     align-self: center;
     text-align: center;
+    justify-content: center; /* centers children horizontally */
+    flex-direction: column; /* stacks children vertically */
+}
+
+
+.typewriter_text {
+    font-size: 1.5rem;
+    justify-content: center;
+    position: relative;
+    display: block;
+    overflow: hidden; /* Important for keeping the cursor in line */
+    white-space: nowrap;
+    width: max-content;
+    min-width: 100%;
+}
+
+.typewriter_text:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white; /* Remove the red color here */
+    border-left: 2px solid black; /* Blue cursor */
+    animation: animate 4s steps(21) infinite;
+}
+@keyframes animate
+{
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+.typewriter_texter, .section_text_p2 {
+    display: block;
+    vertical-align: middle; /* adds right margin to the typewriter_text for spacing */
+    word-wrap: break-word;
+    width: 100%
+    
 }
 
 .section_text p
@@ -265,9 +321,11 @@ section
 
 .section_text_p2
 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
     /* the vertical space between analyst and the download/contact info buttons */
+    margin-right: 0;
+    /* removes right margin from section_text_p2 if it's the last element, which we already did with margin0right in typewriter_text + section_text_p2 above */
 }
 
 .title
@@ -290,15 +348,13 @@ section
 .icon
 {
     cursor: default;
-    height: 2rem;
-    /* this controls the actual size of the icons*/
+    height: 2rem; /* this controls the actual size of the icons*/
 }
 
 .icon.arrow
 {
     cursor: pointer;
-    height: 2rem;
-    /* this controls the actual size of the icons*/
+    height: 2rem; /* this controls the actual size of the icons*/
 }
 
 /* BUTTONS */
@@ -310,16 +366,32 @@ section
     gap: 1rem;
 }
 
+.btn-container .btn.btn-color-1.project-btn {
+    color: white;                /* text color */
+    text-decoration: none;         /* removes underline */
+    display: inline-block;         /* proper alignment and block behavior */
+    width: 6rem;                   /* width of the button */
+    padding: 1rem;                 /* padding around text */
+    border-radius: 1rem;           /* rounded corners */
+    font-weight: 600;              /* font boldness */
+    text-align: center;            /* center text */
+    transition: all 300ms ease;    /* smooth transition for hover effects */
+    border: 1px solid rgb(53, 53, 53); /* border styling */
+    line-height: normal;           /* line height for text */
+    cursor: pointer;               /* cursor indicates it's clickable */
+    background: rgb(53,53,53);   /* makes the button color a deep grey/black */
+    font-size: .85rem;             /* changes the font size of the button (ex. contact info, website link*/
+}
+
 .btn
 {
-    color: black;
-    /* makes the color of the download cv text within the intro section button black -- it was blue as if it were a hyperlink on some displays*/
+    color: black; /* makes the color of the download cv text within the intro section button black -- it was blue as if it were a hyperlink on some displays*/
     font-weight: 600;
     transition: all 300ms ease;
     padding: 1rem;
     width: 8rem;
-    border-radius: 1rem;
-    /* changes the shape of the buttons -- 2rem makes it more oval, 1 rem makes it a smoother rectangle*/
+    border-radius: 1rem; /* changes the shape of the buttons -- 2rem makes it more oval, 1 rem makes it a smoother rectangle*/
+    font-size: .85rem;
 }
 
 .btn-color-1, .btn-color-2
@@ -448,6 +520,7 @@ section
     color: black;
     font-weight: 600;
     font-size: 1.75rem;
+    /* the font size of the items within the boxes like "data analysis", "development", etc. */
     margin-bottom: 2rem;
 }
 

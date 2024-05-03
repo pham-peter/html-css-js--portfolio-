@@ -59,12 +59,43 @@
         <div class="section_text">
             <p class="section_text_p1"><img src="hand-waving.svg" alt="Wave" class="waving-hand" style="vertical-align: middle;"> Hello, I'm</p>
             <h1 class="title">Peter Pham</h1>
-            <p class="section_text_p2">Analyst</p>
+            <div class="typewriter texter">
+                <p class="typewriter_text"></p>
+                <p class="section_text_p2">Analyst</p>
+            </div>
+            <script>
+                const text = document.querySelector(".typewriter_text");
+                const textLoad = () => {
+                    setTimeout(() => {
+                        text.textContent = "Data";
+                    }, 0);
+                    setTimeout(() => {
+                        text.textContent = "Systems";
+                    }, 4000);
+                    setTimeout(() => {
+                    text.textContent = "Business";
+                    }, 8000);
+                    setTimeout(() => {
+                    text.textContent = "Business Systems";
+                    }, 12000);
+                    setTimeout(() => {
+                    text.textContent = "Business Intelligence";
+                    }, 16000);
+                    setTimeout(() => {
+                    text.textContent = "Marketing";
+                    }, 20000);
+                    setTimeout(() => {
+                    text.textContent = "Program";
+                    }, 24000);
+                }
+                
+                textLoad();
+                setInterval(textLoad, 28000);
+            </script>
             <div class="btn-container">
                 <button class="btn btn-color-2"
                 onclick="window.open('Peter Pham Resume 2024 Updated.pdf', '_blank')">Download CV</button>
-                <button class="btn btn-color-1"
-                onclick="location.href='#contact'">Contact Info</button>
+                <a href="#contact" class="btn btn-color-1 project-btn">Contact Info</a>
             </div>
             <div id="socials-container">
                 <img
@@ -91,6 +122,10 @@
                 class="icon"
                 onclick="window.open('https://github.com/pham-peter/', '_blank')"
                 />
+            </div>
+            <br>
+            <div class="text-container">
+                <p>*Will always follow back on LinkedIn, but I'll only accept/follow folks I know on Instagram</p>
             </div>
         </div>
         </section>
@@ -290,7 +325,7 @@
                 </div>
                 </div>
                 <div class="text-container">
-                    <p>Here are some examples of my work. The first three images are visualizations I've created using Tableau for a case study. Keep in mind that data shown/used for the accompanying visualizations is for example purposes. The visualizations are pieces of a larger dashboard that attempt to provide a more thorough overview of the YoY changes between three campaign types in addition to lead qualities and also includes predictive analyses and forecasting. In addition to visualizations, I'm also adept at creating aesthetically pleasing documents and presentations that are shared with higher-level executives and similar stakeholders.
+                    <p>Below are some examples of my work. The first three images are visualizations I've created using Tableau for a case study. Keep in mind that data shown/used for the accompanying visualizations is for example purposes. The visualizations are pieces of a larger dashboard that attempt to provide a more thorough overview of the YoY changes between three campaign types in addition to lead qualities and also includes predictive analyses and forecasting. In addition to visualizations, I'm also adept at creating aesthetically pleasing documents and presentations that are shared with higher-level executives and similar stakeholders.
                     </p>
                     <br>
                     <div class="paragraph-images">
@@ -333,9 +368,7 @@
                 </div>
                 <h2 class="experience-sub-title project-title">Black Tengu Exotics</h2>
                 <div class="btn-container">
-                    <button class="btn btn-color-1 project-btn" onclick="location.href='https://www.linkedin.com/in/peter--pham/'">
-                        Website Link
-                    </button>
+                    <a href="https://www.linkedin.com/in/peter--pham/" target="_blank" class="btn btn-color-1 project-btn">Website Link</a>
                 </div>
                 <p><br>This will be a website I'm creating for my friend Bryce Fisher. He's an exotic pet breeder and currently has an online storefront named <a href="https://www.morphmarket.com/stores/blacktenguexotics/", target="_blank"><b>Black Tengu Exotics here</b></a> while I eventually get a new website online for him.</p>
                 <p><br>I'll also shamelessly plug him and refer you to both his <a href="https://www.instagram.com/black_tengu_exotics/", target="_blank"><b>Instagram</b></a> and <a href="https://www.youtube.com/@btengu", target="_blank"><b>YouTube</b></a> accounts. </p>
@@ -350,11 +383,9 @@
                 </div>
                 <h2 class="experience-sub-title project-title">Autumn Nguyen's Website</h2>
                 <div class="btn-container">
-                    <button class="btn btn-color-1 project-btn" onclick="location.href='https://www.linkedin.com/in/peter--pham/'">
-                        Website Link
-                    </button>
+                    <a href="https://www.linkedin.com/in/peter--pham/" target="_blank" class="btn btn-color-1 project-btn">Website Link</a>
                 </div>
-                <p><br>This will also be a website I'm creating for my friend Autumn "Oanh" Nguyen. She's an expert in communications, and I'll also be periodically posting her photos and other media here.</p>
+                <p><br>This will also be a website I'm creating for my friend Autumn "Oanh" Nguyen. She's an expert in communications + media, and I'll also be periodically posting her photos and other media here.</p>
             </div>
             <div class="details-container color-container">
                 <div class="article-container">
@@ -366,9 +397,7 @@
                 </div>
                 <h2 class="experience-sub-title project-title">Project Three</h2>
                 <div class="btn-container">
-                    <button class="btn btn-color-1 project-btn" onclick="location.href='https://www.linkedin.com/in/peter--pham/'">
-                        Project Link
-                    </button>
+                    <a href="https://www.linkedin.com/in/peter--pham/" target="_blank" class="btn btn-color-1 project-btn">Project Link</a>
                 </div>
             </div>
         </div>

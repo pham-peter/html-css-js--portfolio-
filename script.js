@@ -34,3 +34,49 @@ function changeIconE2(isHovering) {
         icon.src = 'envelope-simple-fill.svg'; // This is the original icon
     }
 }
+
+const text = document.querySelector(".typewriter_text");
+const textLoad = () => {
+    text.classList.remove("animated");  // Reset animation
+    setTimeout(() => {
+        text.textContent = "Data";
+        text.classList.add("animated");  // Start animation
+    }, 0);
+    setTimeout(() => {
+        text.textContent = "Systems";
+    }, 4000);
+    setTimeout(() => {
+        text.textContent = "Business";
+    }, 8000);
+    setTimeout(() => {
+        text.textContent = "Business Systems";
+    }, 12000);
+    setTimeout(() => {
+        text.textContent = "Business Intelligence";
+    }, 16000);
+    setTimeout(() => {
+        text.textContent = "Marketing";
+    }, 20000);
+    setTimeout(() => {
+        text.textContent = "Program";
+    }, 24000);
+}
+
+textLoad();
+setInterval(textLoad, 28000);
+
+/* this needs to be 28000, or +4000 as the original*/
+const text = document.querySelector(".typewriter_text");
+const texts = ["Data", "Systems", "Business", "Business Systems", "Business Intelligence", "Marketing", "Program"];
+let index = 0;
+
+function updateText() {
+    text.textContent = texts[index++];
+    if (index >= texts.length) index = 0;
+    setTimeout(() => {
+        requestAnimationFrame(updateText);
+    }, 4000);  // Continue scheduling each update at the right time
+}
+
+requestAnimationFrame(updateText);
+
