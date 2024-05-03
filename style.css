@@ -470,6 +470,22 @@ article.icon
     cursor: default;
 }
 
+/* the following .paragraph items were created to manage images within the experience section (mainly vizs) */
+.paragraph-images 
+{
+    text-align: center;
+}
+
+.paragraph-images img 
+{
+    display: inline-block;
+    vertical-align: middle;
+    /* adjusts the alignment(s) of the images, regardless of width or height, to the middle of each other */
+    width: 500px;
+    margin: 10px;
+    /* adds 10 pixels of space on all sides of each image (up, down, left, right) */
+}
+
 /* PROJECTS SECTION */
 .details-container p a:hover {
     /* this was created to handle the underlining for the hyperlinks located within the projects*/
@@ -495,8 +511,8 @@ article.icon
 {
     border-radius: 1rem;
     /* changed from 2rem to 1rem because it looked too round on mobile*/
-    width: 30%;
-    height: 30%;
+    width: 40%;
+    height: 40%;
 }
 
 .project-title
@@ -505,11 +521,6 @@ article.icon
     color: black;
 }
 
-.project-btn
-{
-    color: black;
-    border-color: rgb(163, 163, 163);
-}
 
 
 /* CONTACT SECTION */

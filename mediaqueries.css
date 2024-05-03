@@ -326,6 +326,20 @@
         text-underline-offset: 0.35rem;
         text-decoration-color: rgb(163, 163, 163);
     }
-    
+    .paragraph-images 
+    {
+        text-align: center;
+    }
+
+.paragraph-images img 
+    {
+        display: inline-block;
+        vertical-align: middle;
+        /* adjusts the alignment(s) of the images, regardless of width or height, to the middle of each other */
+        width: 350px;
+        margin: 10px;
+        /* adds 10 pixels of space on all sides of each image (up, down, left, right) */
+    }
+
 
 }
