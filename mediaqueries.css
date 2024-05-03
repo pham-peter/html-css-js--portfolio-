@@ -1,4 +1,5 @@
-@keyframes waveAnimation {
+@keyframes waveAnimation 
+{
     0%, 100% {
       transform: rotate(-10deg);
     }
@@ -7,8 +8,10 @@
     }
   }
   
-  .waving-hand {
-      display: inline-block;  /* Allows transform to work properly */
+  .waving-hand 
+  {
+      display: inline-block;
+      /* allows transform to work properly */
       vertical-align: middle;
       animation: waveAnimation 1s ease-in-out infinite;
   }
