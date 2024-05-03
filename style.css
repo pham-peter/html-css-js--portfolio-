@@ -311,6 +311,7 @@ section
 .btn
 {
     color: black;
+    /* makes the color of the download cv text within the intro section button black -- it was blue as if it were a hyperlink on some displays*/
     font-weight: 600;
     transition: all 300ms ease;
     padding: 1rem;
