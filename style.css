@@ -310,6 +310,7 @@ section
 
 .btn
 {
+    color: black;
     font-weight: 600;
     transition: all 300ms ease;
     padding: 1rem;
