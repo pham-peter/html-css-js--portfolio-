@@ -210,6 +210,7 @@
        margin-bottom: 1rem; 
        /* this is needed so that the footer is nearly the same amount of space vertically down when you change the size of the screen and the nav-links items can either be 1 or 2 rows*/
    }
+   
 }
 
 @media screen and (max-width: 600px) 
@@ -309,10 +310,6 @@
     {
         font-size: 2rem;
     }
-    .text-container
-    {
-        text-align: justify;
-    }
     .text-container a:hover
     /* this selector targets only the <a> elements that are within <p> tags inside elements with the .text-container class when they are hovered over */
     {
@@ -338,12 +335,19 @@
     {
         display: inline-block;
         vertical-align: middle;
-        max-width: 90%; 
+        max-width: 90%;
+        /* ensures the images doesn't take more than 90% of their container(s) */
         /* adjusts the alignment(s) of the images, regardless of width or height, to the middle of each other */
         width: 350px;
         margin: 10px;
         /* adds 10 pixels of space on all sides of each image (up, down, left, right) */
     }
 
-
+    .menu-links.open
+    {
+        margin-top: 7px;
+        /* adds a slight space from the hamburger menu/x menu to the first list item (about) */
+        border: 1px solid black;
+        /* creates a black border outline on mobile or 600px or less screen width so that it isn't jarringly white */
+    }
 }

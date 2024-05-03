@@ -156,8 +156,10 @@ a:hover
 
 .menu-links.open
 {
+    margin-top: 7px;
+    /* adds a slight space from the hamburger menu/x menu to the first list item (about) */
     max-height: 400px;
-    /* this needs to be increased if the number of dropdown links/options increase -- it was previously 300px but then my last item Contact was cut in half*/
+    /* this needs to be increased if the number of dropdown links/options increase -- it was previously 300px but then my last item Contact was cut in half */
 }
 
 .hamburger-icon.open span:first-child
