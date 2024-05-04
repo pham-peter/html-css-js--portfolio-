@@ -298,7 +298,7 @@ section
     width: 100%;
     background-color: white; /* Remove the red color here */
     border-left: 2px solid black; /* black cursor */
-    animation: animate 4s steps(21) infinite;
+    animation: animate 4s steps(21) infinite, blink-border 1s steps(1) infinite;
 }
 
 @keyframes animate
@@ -309,6 +309,11 @@ section
     100%{
         left: (0%);
     }
+}
+
+@keyframes blink-border {
+    0%, 50% { border-left-color: black; } /* Cursor visible */
+    51%, 100% { border-left-color: transparent; } /* Cursor invisible */
 }
 
 .typewriter_texter, .section_text_p2 {
