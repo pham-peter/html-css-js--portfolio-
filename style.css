@@ -239,6 +239,17 @@ section
     /* centers the container within its parent element horizontally */
 }
 
+#profile2 .section_text
+{
+    align-self: center;
+    text-align: center;
+    justify-content: center; /* centers children horizontally */
+    flex-direction: column; /* stacks children vertically */
+    align-items: center;
+    display: flex;
+    /* the above two (align-items and display flex) make the typewriter effect for the sub-title analyst work correctly and the blinking line move together with the letters */
+}
+
 
 #profile2 .icon
 {
@@ -264,6 +275,7 @@ section
     justify-content: center; /* centers children horizontally */
     flex-direction: column; /* stacks children vertically */
 }
+
 
 
 .typewriter_text {
@@ -304,6 +316,7 @@ section
     vertical-align: middle; /* adds right margin to the typewriter_text for spacing */
     word-wrap: break-word;
     width: 100%
+    
     
 }
 

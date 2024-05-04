@@ -129,7 +129,7 @@
     }
    #experience, .experience-details-container
    {
-    margin-top: 2rem;
+        margin-top: 2rem;
    }
    #profile2
    {
@@ -138,29 +138,35 @@
    }
    #profile2, .section-container
    {
-    display:block;
+        display:block;
    }
    .arrow
    {
-    display: none;
+        display: none;
    }
    section, .section-container
    {
-    height: fit-content;
+        height: fit-content;
+   }
+   .section_text
+   {
+        align-items: center;
+        justify-content: center;
+        display: flex;
    }
    section
    {
-    margin: 0 5%;
+        margin: 0 5%;
    }
    .section_pic-container
    {
-    width: 275px;
-    height:275px;
-    margin: 0 auto 2rem;
+        width: 275px;
+        height:275px;
+        margin: 0 auto 2rem;
    }
    .about-containers
    {
-    margin-top: 0;
+        margin-top: 0;
    }
    .about-containers, .contact-info-upper-container, .btn-container
     /* the entirety of the contact me box cotnainer, contents, etc.*/
@@ -301,10 +307,6 @@
     {
         width: auto;
         justify-content: center;
-    }
-    .section_text_p2
-    {
-        font-size: 1.25rem;
     }
     .title
     {
