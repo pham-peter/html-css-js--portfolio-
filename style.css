@@ -285,16 +285,17 @@ section
     height: 100%;
     width: 100%;
     background-color: white; /* Remove the red color here */
-    border-left: 2px solid black; /* Blue cursor */
+    border-left: 2px solid black; /* black cursor */
     animation: animate 4s steps(21) infinite;
 }
+
 @keyframes animate
 {
     40%, 60%{
         left: calc(100% + 4px);
     }
     100%{
-        left: 0%;
+        left: (0%);
     }
 }
 

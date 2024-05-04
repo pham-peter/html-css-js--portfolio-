@@ -35,48 +35,21 @@ function changeIconE2(isHovering) {
     }
 }
 
-const text = document.querySelector(".typewriter_text");
-const textLoad = () => {
-    text.classList.remove("animated");  // Reset animation
-    setTimeout(() => {
-        text.textContent = "Data";
-        text.classList.add("animated");  // Start animation
-    }, 0);
-    setTimeout(() => {
-        text.textContent = "Systems";
-    }, 4000);
-    setTimeout(() => {
-        text.textContent = "Business";
-    }, 8000);
-    setTimeout(() => {
-        text.textContent = "Business Systems";
-    }, 12000);
-    setTimeout(() => {
-        text.textContent = "Business Intelligence";
-    }, 16000);
-    setTimeout(() => {
-        text.textContent = "Marketing";
-    }, 20000);
-    setTimeout(() => {
-        text.textContent = "Program";
-    }, 24000);
-}
+document.addEventListener("DOMContentLoaded", function() {
+    const typewriterText = document.querySelector(".typewriter_text");
+    const texts = ["Data", "Systems", "Business", "Business Systems", "Business Intelligence", "Marketing", "Program"];
+    let index = 0;
 
-textLoad();
-setInterval(textLoad, 28000);
+    function updateText() {
+        typewriterText.textContent = texts[index++];
+        typewriterText.classList.remove("animated"); // Reset animation
+        setTimeout(() => {
+            typewriterText.classList.add("animated"); // Start animation
+        }, 0); // Immediately trigger re-adding for animation effect
 
-/* this needs to be 28000, or +4000 as the original*/
-const text = document.querySelector(".typewriter_text");
-const texts = ["Data", "Systems", "Business", "Business Systems", "Business Intelligence", "Marketing", "Program"];
-let index = 0;
+        if (index >= texts.length) index = 0;
+    }
 
-function updateText() {
-    text.textContent = texts[index++];
-    if (index >= texts.length) index = 0;
-    setTimeout(() => {
-        requestAnimationFrame(updateText);
-    }, 4000);  // Continue scheduling each update at the right time
-}
-
-requestAnimationFrame(updateText);
-
+    updateText(); // Run immediately on load
+    setInterval(updateText, 4000); // Update text every 4 seconds
+});
